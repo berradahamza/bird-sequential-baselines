@@ -1,0 +1,15 @@
+BIRD - Baselines CLL : GRU4Rec, SASRec, popularité, Markov-1, Markov-2
+
+WINDOWS - Depuis le dossier extrait BIRD_Sequential_Baselines :
+1. Lancer setup_windows.bat (Python 3.12 conseillé).
+2. Lancer train_all_windows.bat, ou :
+   .\.venv\Scripts\python.exe run_campaign.py train
+3. Après entraînement et sélection en validation : lancer test_all_windows.bat, ou :
+   .\.venv\Scripts\python.exe run_campaign.py test
+4. Lire runs\summary\results_final.csv.
+
+Plan sans calcul : .\.venv\Scripts\python.exe run_campaign.py plan
+Tests : .\.venv\Scripts\python.exe -m unittest discover -s tests -v
+
+5 splits (2022..2026), 3 seeds (2022..2024), batch 64, epochs max 30,
+patience 5. Pas de CL4SRec. Popularité/Markov calculés 1 fois par split.

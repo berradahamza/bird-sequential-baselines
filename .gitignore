@@ -1,0 +1,13 @@
+# Environnements et caches Python
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Checkpoints d'entraînement (les métriques et CSV de runs/ restent versionnés)
+runs/**/*.pt
+
+# Système
+.DS_Store
+Thumbs.db
+desktop.ini

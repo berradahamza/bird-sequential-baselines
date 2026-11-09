@@ -1,0 +1,15 @@
+{
+  "hidden": 64,
+  "dropout": 0.2,
+  "max_history": 32,
+  "blocks": 2,
+  "heads": 2,
+  "batch_size": 64,
+  "epochs": 30,
+  "patience": 5,
+  "lr": 0.001,
+  "weight_decay": 5e-05,
+  "seed": 2022,
+  "bootstrap": 1000,
+  "log_every": 40
+}
